@@ -4,6 +4,7 @@
 next-env.d.ts
 /out/
 /_next/
+/.nojekyll
 /404/
 /best-tempo-traveller-fleet-bangalore/
 /fleet/
