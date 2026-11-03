@@ -122,9 +122,8 @@ export default function WeekendPackageDetailPage({ params }: PageProps) {
               src={getAssetPath(pkg.image)}
               alt={pkg.title}
               className="w-full h-full object-cover opacity-25 filter blur-xs"
-            loading="lazy"
-            decoding="async"
-            decoding="async"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1a365d] via-[#1a365d]/80 to-transparent"></div>
           </div>
