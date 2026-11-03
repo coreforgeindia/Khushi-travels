@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const CONSENT_KEY = "khushi-cookie-consent";
-const GTM_ID = "GTM-MD7GBMCS";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
@@ -19,49 +18,9 @@ export default function CookieConsent() {
       window.removeEventListener("khushi:open-cookie-settings", openSettings);
   }, []);
 
-  useEffect(() => {
-    if (window.localStorage.getItem(CONSENT_KEY) !== "accepted") return;
-    if (document.querySelector(`script[data-consent-gtm="${GTM_ID}"]`)) return;
-
-    const dataWindow = window as Window & { dataLayer?: unknown[] };
-    const dataLayer = dataWindow.dataLayer ?? [];
-    dataWindow.dataLayer = dataLayer;
-    dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
-    script.dataset.consentGtm = GTM_ID;
-    document.head.appendChild(script);
-  }, [visible]);
-
   const chooseConsent = (consent: "accepted" | "denied") => {
     window.localStorage.setItem(CONSENT_KEY, consent);
     setVisible(false);
-
-    const analyticsLoaded = Boolean(
-      document.querySelector(`script[data-consent-gtm="${GTM_ID}"]`)
-    );
-    if (consent === "denied" && analyticsLoaded) {
-      const analyticsCookies = document.cookie
-        .split(";")
-        .map((cookie) => cookie.trim().split("=")[0])
-        .filter((name) => /^(_ga|_gid|_gat|_gcl_)/.test(name));
-      const cookieDomains = [
-        window.location.hostname,
-        `.${window.location.hostname}`,
-        ".khushitravel.in",
-      ];
-
-      analyticsCookies.forEach((name) => {
-        cookieDomains.forEach((domain) => {
-          document.cookie = `${name}=; Max-Age=0; path=/; domain=${domain}; SameSite=Lax`;
-        });
-        document.cookie = `${name}=; Max-Age=0; path=/; SameSite=Lax`;
-      });
-
-      window.location.reload();
-    }
   };
 
   if (!visible) return null;
@@ -77,8 +36,8 @@ export default function CookieConsent() {
         Privacy settings
       </h2>
       <p className="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
-        Optional cookies help us understand site usage. You can change your
-        choice at any time.
+        Google Tag Manager loads sitewide. Your choice is saved on this device,
+        but does not block tags managed through Google Tag Manager.
       </p>
       <div className="mt-2 flex gap-4 text-xs sm:text-sm">
         <Link href="/privacy/" className="text-blue-700 hover:underline">
