@@ -589,22 +589,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* =================================================================== */}
-        {/* 8. NEW REQUIREMENT, DESIGNED BY COREFORGE                          */}
-        {/* =================================================================== */}
-        <div className="border-t border-white/[0.08] mt-4 pt-4 text-center">
-          <p className="text-[11px] sm:text-xs text-[#94A3B8] tracking-wide inline-flex items-center justify-center gap-1.5 flex-wrap">
-            <span>Designed &amp; Developed by</span>
-            <a
-              href="https://www.coreforgeindia.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-[#D8B43B] hover:text-[#D8B43B] hover:underline transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080878] rounded px-1"
-            >
-              CoreForge
-            </a>
-          </p>
-        </div>
       </div>
     </footer>
   );
