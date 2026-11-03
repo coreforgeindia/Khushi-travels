@@ -1,0 +1,16 @@
+/spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage/ /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
+/spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
+/spiritual-pilgrimage-tours/ /packages/pilgrimage/ 301!
+/spiritual-pilgrimage-tours /packages/pilgrimage/ 301!
+/pilgrimage-packages/ /packages/pilgrimage/ 301!
+/pilgrimage-packages /packages/pilgrimage/ 301!
+/packages/normal/ /packages/holiday/ 301!
+/packages/normal /packages/holiday/ 301!
+/packages/normal/:splat /packages/holiday/:splat 301!
+/packages/special/12-jyotirlinga-pilgrimage/ /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
+/packages/special/12-jyotirlinga-pilgrimage /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
+/packages/special/:splat /packages/pilgrimage/:splat 301!
+/packages/special/ /packages/pilgrimage/ 301!
+/packages/special /packages/pilgrimage/ 301!
+/packages/kashi-triveni-ayodhya/ /packages/pilgrimage/kashi-triveni-ayodhya/ 301!
+/packages/kashi-triveni-ayodhya /packages/pilgrimage/kashi-triveni-ayodhya/ 301!

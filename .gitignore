@@ -1,0 +1,31 @@
+# Next.js build and dependencies
+/node_modules
+/.next/
+next-env.d.ts
+/out/
+/_next/
+/404/
+/best-tempo-traveller-fleet-bangalore/
+/fleet/
+/hire-tempo-traveller-bangalore/
+/localities/
+/packages/
+/pilgrimage-packages/
+/privacy/
+/routes/
+/services/
+/spiritual-pilgrimage-tours/
+/tempo-traveller-rent-price-bangalore/
+/terms/
+/tour-packages-from-bangalore/
+/404.html
+/index.html
+/index.txt
+/image-sitemap.xml
+/robots.txt
+/sitemap.xml
+*.tsbuildinfo
+
+# OS Files
+.DS_Store
+Thumbs.db

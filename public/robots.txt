@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Production XML Sitemap
+Sitemap: https://khushitravel.in/sitemap.xml

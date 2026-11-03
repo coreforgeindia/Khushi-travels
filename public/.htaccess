@@ -1,0 +1,12 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+
+RewriteRule ^spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage/?$ /packages/pilgrimage/12-jyotirlinga-yatra/ [R=301,L]
+RewriteRule ^spiritual-pilgrimage-tours/?$ /packages/pilgrimage/ [R=301,L]
+RewriteRule ^pilgrimage-packages/?$ /packages/pilgrimage/ [R=301,L]
+RewriteRule ^packages/normal/?$ /packages/holiday/ [R=301,L]
+RewriteRule ^packages/normal/(.*)$ /packages/holiday/$1 [R=301,L]
+RewriteRule ^packages/special/12-jyotirlinga-pilgrimage/?$ /packages/pilgrimage/12-jyotirlinga-yatra/ [R=301,L]
+RewriteRule ^packages/special/?$ /packages/pilgrimage/ [R=301,L]
+RewriteRule ^packages/special/(.*)$ /packages/pilgrimage/$1 [R=301,L]
+RewriteRule ^packages/kashi-triveni-ayodhya/?$ /packages/pilgrimage/kashi-triveni-ayodhya/ [R=301,L]

@@ -1,0 +1,588 @@
+[
+  {
+    "input": "/images/hero-bg.webp",
+    "alt": "Khushi Travels group travel vehicle hero image",
+    "src": "/images/optimized/hero-bg-1200w.webp",
+    "srcSet": "/images/optimized/hero-bg-480w.webp 480w, /images/optimized/hero-bg-768w.webp 768w, /images/optimized/hero-bg-1200w.webp 1200w, /images/optimized/hero-bg-1600w.webp 1600w",
+    "socialImage": "/images/optimized/og/hero-bg.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/hero-bg-480w.webp",
+        "bytes": 11156,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/hero-bg-768w.webp",
+        "bytes": 17948,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/hero-bg-1200w.webp",
+        "bytes": 29752,
+        "quality": 60
+      },
+      {
+        "width": 1600,
+        "src": "/images/optimized/hero-bg-1600w.webp",
+        "bytes": 41856,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/mysore.webp",
+    "alt": "Mysore Palace illuminated at dusk",
+    "src": "/images/optimized/destinations/mysore-1200w.webp",
+    "srcSet": "/images/optimized/destinations/mysore-480w.webp 480w, /images/optimized/destinations/mysore-768w.webp 768w, /images/optimized/destinations/mysore-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/mysore.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/mysore-480w.webp",
+        "bytes": 26246,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/mysore-768w.webp",
+        "bytes": 36246,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/mysore-1200w.webp",
+        "bytes": 49312,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/ayodhya.webp",
+    "alt": "Temple architecture in Ayodhya",
+    "src": "/images/optimized/destinations/ayodhya-1200w.webp",
+    "srcSet": "/images/optimized/destinations/ayodhya-480w.webp 480w, /images/optimized/destinations/ayodhya-768w.webp 768w, /images/optimized/destinations/ayodhya-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/ayodhya.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/ayodhya-480w.webp",
+        "bytes": 30544,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/ayodhya-768w.webp",
+        "bytes": 51818,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/ayodhya-1200w.webp",
+        "bytes": 104666,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/varanasi-ganga-aarti.jpg",
+    "alt": "Ganga Aarti ceremony at the Varanasi ghats",
+    "src": "/images/optimized/destinations/varanasi-ganga-aarti-1200w.webp",
+    "srcSet": "/images/optimized/destinations/varanasi-ganga-aarti-480w.webp 480w, /images/optimized/destinations/varanasi-ganga-aarti-768w.webp 768w, /images/optimized/destinations/varanasi-ganga-aarti-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/varanasi-ganga-aarti.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/varanasi-ganga-aarti-480w.webp",
+        "bytes": 27660,
+        "quality": 75
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/varanasi-ganga-aarti-768w.webp",
+        "bytes": 58512,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/varanasi-ganga-aarti-1200w.webp",
+        "bytes": 90546,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/triveni-sangam-prayagraj.jpg",
+    "alt": "Boats at Triveni Sangam in Prayagraj",
+    "src": "/images/optimized/destinations/triveni-sangam-prayagraj-1200w.webp",
+    "srcSet": "/images/optimized/destinations/triveni-sangam-prayagraj-480w.webp 480w, /images/optimized/destinations/triveni-sangam-prayagraj-768w.webp 768w, /images/optimized/destinations/triveni-sangam-prayagraj-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/triveni-sangam-prayagraj.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/triveni-sangam-prayagraj-480w.webp",
+        "bytes": 28814,
+        "quality": 75
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/triveni-sangam-prayagraj-768w.webp",
+        "bytes": 63496,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/triveni-sangam-prayagraj-1200w.webp",
+        "bytes": 107702,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/saryu-river-ayodhya.jpg",
+    "alt": "Saryu River waterfront in Ayodhya",
+    "src": "/images/optimized/destinations/saryu-river-ayodhya-1200w.webp",
+    "srcSet": "/images/optimized/destinations/saryu-river-ayodhya-480w.webp 480w, /images/optimized/destinations/saryu-river-ayodhya-768w.webp 768w, /images/optimized/destinations/saryu-river-ayodhya-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/saryu-river-ayodhya.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/saryu-river-ayodhya-480w.webp",
+        "bytes": 28478,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/saryu-river-ayodhya-768w.webp",
+        "bytes": 50640,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/saryu-river-ayodhya-1200w.webp",
+        "bytes": 81448,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/somnath.webp",
+    "alt": "Somnath Jyotirlinga Temple on the Gujarat coast",
+    "src": "/images/optimized/destinations/jyotirlingas/somnath-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/somnath-480w.webp 480w, /images/optimized/destinations/jyotirlingas/somnath-768w.webp 768w, /images/optimized/destinations/jyotirlingas/somnath-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/somnath.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/somnath-480w.webp",
+        "bytes": 30212,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/somnath-768w.webp",
+        "bytes": 49694,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/somnath-1200w.webp",
+        "bytes": 66126,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/mallikarjuna.webp",
+    "alt": "Mallikarjuna Jyotirlinga Temple at Srisailam",
+    "src": "/images/optimized/destinations/jyotirlingas/mallikarjuna-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/mallikarjuna-480w.webp 480w, /images/optimized/destinations/jyotirlingas/mallikarjuna-768w.webp 768w, /images/optimized/destinations/jyotirlingas/mallikarjuna-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/mallikarjuna.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/mallikarjuna-480w.webp",
+        "bytes": 28596,
+        "quality": 35
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/mallikarjuna-768w.webp",
+        "bytes": 81590,
+        "quality": 55
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/mallikarjuna-1200w.webp",
+        "bytes": 137484,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/mahakaleshwar.webp",
+    "alt": "Mahakaleshwar Jyotirlinga Temple in Ujjain",
+    "src": "/images/optimized/destinations/jyotirlingas/mahakaleshwar-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/mahakaleshwar-480w.webp 480w, /images/optimized/destinations/jyotirlingas/mahakaleshwar-768w.webp 768w, /images/optimized/destinations/jyotirlingas/mahakaleshwar-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/mahakaleshwar.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/mahakaleshwar-480w.webp",
+        "bytes": 27970,
+        "quality": 75
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/mahakaleshwar-768w.webp",
+        "bytes": 57330,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/mahakaleshwar-1200w.webp",
+        "bytes": 76764,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/omkareshwar.webp",
+    "alt": "Omkareshwar Jyotirlinga on Mandhata Island",
+    "src": "/images/optimized/destinations/jyotirlingas/omkareshwar-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/omkareshwar-480w.webp 480w, /images/optimized/destinations/jyotirlingas/omkareshwar-768w.webp 768w, /images/optimized/destinations/jyotirlingas/omkareshwar-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/omkareshwar.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/omkareshwar-480w.webp",
+        "bytes": 29388,
+        "quality": 65
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/omkareshwar-768w.webp",
+        "bytes": 71918,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/omkareshwar-1200w.webp",
+        "bytes": 98192,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/kedarnath.webp",
+    "alt": "Kedarnath Jyotirlinga Temple in the Himalayas",
+    "src": "/images/optimized/destinations/jyotirlingas/kedarnath-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/kedarnath-480w.webp 480w, /images/optimized/destinations/jyotirlingas/kedarnath-768w.webp 768w, /images/optimized/destinations/jyotirlingas/kedarnath-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/kedarnath.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/kedarnath-480w.webp",
+        "bytes": 29994,
+        "quality": 45
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/kedarnath-768w.webp",
+        "bytes": 78352,
+        "quality": 65
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/kedarnath-1200w.webp",
+        "bytes": 119698,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/bhimashankar.webp",
+    "alt": "Bhimashankar Jyotirlinga Temple in Maharashtra",
+    "src": "/images/optimized/destinations/jyotirlingas/bhimashankar-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/bhimashankar-480w.webp 480w, /images/optimized/destinations/jyotirlingas/bhimashankar-768w.webp 768w, /images/optimized/destinations/jyotirlingas/bhimashankar-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/bhimashankar.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/bhimashankar-480w.webp",
+        "bytes": 29072,
+        "quality": 55
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/bhimashankar-768w.webp",
+        "bytes": 79842,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/bhimashankar-1200w.webp",
+        "bytes": 109570,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/kashi-vishwanath.webp",
+    "alt": "Kashi Vishwanath Jyotirlinga Temple in Varanasi",
+    "src": "/images/optimized/destinations/jyotirlingas/kashi-vishwanath-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/kashi-vishwanath-480w.webp 480w, /images/optimized/destinations/jyotirlingas/kashi-vishwanath-768w.webp 768w, /images/optimized/destinations/jyotirlingas/kashi-vishwanath-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/kashi-vishwanath.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/kashi-vishwanath-480w.webp",
+        "bytes": 27170,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/kashi-vishwanath-768w.webp",
+        "bytes": 45312,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/kashi-vishwanath-1200w.webp",
+        "bytes": 61650,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/trimbakeshwar.webp",
+    "alt": "Trimbakeshwar Jyotirlinga Temple near Nashik",
+    "src": "/images/optimized/destinations/jyotirlingas/trimbakeshwar-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/trimbakeshwar-480w.webp 480w, /images/optimized/destinations/jyotirlingas/trimbakeshwar-768w.webp 768w, /images/optimized/destinations/jyotirlingas/trimbakeshwar-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/trimbakeshwar.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/trimbakeshwar-480w.webp",
+        "bytes": 29526,
+        "quality": 65
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/trimbakeshwar-768w.webp",
+        "bytes": 71966,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/trimbakeshwar-1200w.webp",
+        "bytes": 97560,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/baidyanath.webp",
+    "alt": "Baidyanath Jyotirlinga Temple in Deoghar",
+    "src": "/images/optimized/destinations/jyotirlingas/baidyanath-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/baidyanath-480w.webp 480w, /images/optimized/destinations/jyotirlingas/baidyanath-768w.webp 768w, /images/optimized/destinations/jyotirlingas/baidyanath-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/baidyanath.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/baidyanath-480w.webp",
+        "bytes": 29772,
+        "quality": 75
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/baidyanath-768w.webp",
+        "bytes": 60922,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/baidyanath-1200w.webp",
+        "bytes": 81204,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/nageshwar.webp",
+    "alt": "Nageshwar Jyotirlinga Temple near Dwarka",
+    "src": "/images/optimized/destinations/jyotirlingas/nageshwar-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/nageshwar-480w.webp 480w, /images/optimized/destinations/jyotirlingas/nageshwar-768w.webp 768w, /images/optimized/destinations/jyotirlingas/nageshwar-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/nageshwar.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/nageshwar-480w.webp",
+        "bytes": 28848,
+        "quality": 70
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/nageshwar-768w.webp",
+        "bytes": 64388,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/nageshwar-1200w.webp",
+        "bytes": 87408,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/ramanathaswamy.webp",
+    "alt": "Ramanathaswamy Temple in Rameshwaram",
+    "src": "/images/optimized/destinations/jyotirlingas/ramanathaswamy-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/ramanathaswamy-480w.webp 480w, /images/optimized/destinations/jyotirlingas/ramanathaswamy-768w.webp 768w, /images/optimized/destinations/jyotirlingas/ramanathaswamy-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/ramanathaswamy.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/ramanathaswamy-480w.webp",
+        "bytes": 14604,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/ramanathaswamy-768w.webp",
+        "bytes": 24716,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/ramanathaswamy-1200w.webp",
+        "bytes": 35294,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/destinations/jyotirlingas/grishneshwar.webp",
+    "alt": "Grishneshwar Jyotirlinga Temple near Ellora",
+    "src": "/images/optimized/destinations/jyotirlingas/grishneshwar-1200w.webp",
+    "srcSet": "/images/optimized/destinations/jyotirlingas/grishneshwar-480w.webp 480w, /images/optimized/destinations/jyotirlingas/grishneshwar-768w.webp 768w, /images/optimized/destinations/jyotirlingas/grishneshwar-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/grishneshwar.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/destinations/jyotirlingas/grishneshwar-480w.webp",
+        "bytes": 23532,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/destinations/jyotirlingas/grishneshwar-768w.webp",
+        "bytes": 39666,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/destinations/jyotirlingas/grishneshwar-1200w.webp",
+        "bytes": 53838,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/khushi-travels-logo-white.png",
+    "alt": "Khushi Travels logo in white",
+    "src": "/images/optimized/khushi-travels-logo-white-1200w.webp",
+    "srcSet": "/images/optimized/khushi-travels-logo-white-480w.webp 480w, /images/optimized/khushi-travels-logo-white-768w.webp 768w, /images/optimized/khushi-travels-logo-white-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/khushi-travels-logo-white.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/khushi-travels-logo-white-480w.webp",
+        "bytes": 25716,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/khushi-travels-logo-white-768w.webp",
+        "bytes": 44280,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/khushi-travels-logo-white-1200w.webp",
+        "bytes": 68516,
+        "quality": 60
+      }
+    ]
+  },
+  {
+    "input": "/images/khushi-travels-logo-black.png",
+    "alt": "Khushi Travels logo in black",
+    "src": "/images/optimized/khushi-travels-logo-black-1200w.webp",
+    "srcSet": "/images/optimized/khushi-travels-logo-black-480w.webp 480w, /images/optimized/khushi-travels-logo-black-768w.webp 768w, /images/optimized/khushi-travels-logo-black-1200w.webp 1200w",
+    "socialImage": "/images/optimized/og/khushi-travels-logo-black.webp",
+    "socialWidth": 1200,
+    "socialHeight": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/images/optimized/khushi-travels-logo-black-480w.webp",
+        "bytes": 11318,
+        "quality": 80
+      },
+      {
+        "width": 768,
+        "src": "/images/optimized/khushi-travels-logo-black-768w.webp",
+        "bytes": 18896,
+        "quality": 75
+      },
+      {
+        "width": 1200,
+        "src": "/images/optimized/khushi-travels-logo-black-1200w.webp",
+        "bytes": 32236,
+        "quality": 60
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://khushitravel.in/packages/kashi-triveni-ayodhya/</loc>
+    <image:image>
+      <image:loc>https://khushitravel.in/images/optimized/varanasi-ganga-aarti.webp</image:loc>
+      <image:title>Ganga Maha Aarti at Dashashwamedh Ghat</image:title>
+      <image:caption>Ganga Maha Aarti at Dashashwamedh Ghat</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://khushitravel.in/images/optimized/triveni-sangam-prayagraj.webp</image:loc>
+      <image:title>Sacred Triveni Sangam in Prayagraj</image:title>
+      <image:caption>Sacred Triveni Sangam in Prayagraj</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://khushitravel.in/images/optimized/saryu-river-ayodhya.webp</image:loc>
+      <image:title>Saryu River and Ram Ki Paidi Ghats in Ayodhya</image:title>
+      <image:caption>Saryu River and Ram Ki Paidi Ghats in Ayodhya</image:caption>
+    </image:image>
+  </url>
+</urlset>
