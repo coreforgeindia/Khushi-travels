@@ -34,7 +34,7 @@ export default function KashiEnquiryForm({
 ---------------------------------------
 *Package:* Kashi, Triveni, Ayodhya Yatra
 *Duration:* 03 Nights / 04 Days
-*Pricing:* ₹17,900 per person (+ 5% GST)
+*Pricing:* ₹17,900 per person
 *Group Size:* ${travellers}
 *Rooms Required:* ${rooms}
 *Proposed Date:* ${travelDate || "Flexible / To be confirmed"}
@@ -64,7 +64,7 @@ Please share the official itemised quotation and availability.`;
           Book Your Sacred Yatra
         </h3>
         <p className="text-xs text-[#64748B] mt-0.5">
-          ₹17,900 / Person (+ 5% GST) &bull; 16 Adults &bull; All Meals &amp; Stays Included
+          ₹17,900 / Person &bull; 16 Adults &bull; All Meals &amp; Stays Included
         </p>
       </div>
 

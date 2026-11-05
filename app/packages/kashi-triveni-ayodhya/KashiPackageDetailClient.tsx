@@ -161,7 +161,7 @@ export default function KashiPackageDetailClient({
     {
       question: "What is the B2B package cost and how is it calculated?",
       answer:
-        "The package cost is ₹17,900 per person, calculated for a private group of 16 adults traveling together. Accommodation is arranged across 08 3-Star Premium Deluxe double-sharing rooms. Government GST of 5% applies extra on the total invoice billing.",
+        "The package cost is ₹17,900 per person, calculated for a private group of 16 adults traveling together. Accommodation is arranged across 08 3-Star Premium Deluxe double-sharing rooms in a comfortable, all-inclusive pilgrimage itinerary.",
     },
     {
       question: "Which accommodations are provided for this pilgrimage?",
@@ -311,8 +311,8 @@ export default function KashiPackageDetailClient({
                         </span>
                       </div>
                     </div>
-                    <span className="text-xs font-semibold text-amber-900 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
-                      5% GST extra
+                    <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                      All-inclusive
                     </span>
                   </div>
 
@@ -863,7 +863,7 @@ export default function KashiPackageDetailClient({
                 <ul className="space-y-3.5 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
                     <span className="w-2 h-2 rounded-full bg-rose-500 mt-1.5 shrink-0" />
-                    <span><strong>5% Government GST Extra</strong> on Total Invoice Billing.</span>
+                    <span><strong>Transparent all-inclusive pricing.</strong> No surprise add-ons.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="w-2 h-2 rounded-full bg-rose-500 mt-1.5 shrink-0" />
@@ -1105,7 +1105,7 @@ export default function KashiPackageDetailClient({
             </span>
             <div className="flex items-baseline gap-1">
               <span className="text-base font-bold text-[#1a365d]">₹17,900</span>
-              <span className="text-[10px] text-slate-500">/ person + 5% GST</span>
+              <span className="text-[10px] text-slate-500">/ person</span>
             </div>
           </div>
 

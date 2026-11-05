@@ -46,7 +46,6 @@ export const PILGRIMAGE_PACKAGES: PilgrimagePackage[] = [
       "20-Seater AC Luxury Tempo Traveller",
     ],
     price: "₹17,900 / Person",
-    priceNote: "+ 5% GST",
     image: "/images/destinations/varanasi-ganga-aarti.jpg",
     imageAlt: "Kashi Triveni Ayodhya Yatra - Illuminated Dashashwamedh Ghat Evening Ganga Aarti Varanasi",
     href: "/packages/pilgrimage/kashi-triveni-ayodhya/",
@@ -613,12 +612,7 @@ export default function FeaturedPilgrimageCard() {
                             Package Fare
                           </span>
                           <span className="text-sm sm:text-base font-bold text-white leading-tight">
-                            {pkg.price}{" "}
-                            {pkg.priceNote && (
-                              <span className="text-[10px] text-slate-300 font-normal">
-                                ({pkg.priceNote})
-                              </span>
-                            )}
+                            {pkg.price}
                           </span>
                         </div>
                         <Link
@@ -711,11 +705,6 @@ export default function FeaturedPilgrimageCard() {
                           ) : (
                             <div className="text-lg md:text-xl xl:text-[22px] font-bold text-white tracking-tight mt-0.5 leading-tight">
                               {pkg.price}
-                              {pkg.priceNote && (
-                                <span className="text-xs text-slate-300 font-normal ml-1">
-                                  ({pkg.priceNote})
-                                </span>
-                              )}
                             </div>
                           )}
                         </div>

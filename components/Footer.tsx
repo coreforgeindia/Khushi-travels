@@ -229,17 +229,6 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <div className="w-7 h-7 rounded-lg bg-white/[0.06] text-[#D8B43B] flex items-center justify-center shrink-0 border border-white/10">
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <span className="text-xs text-[#94A3B8]">
-                  GST: <strong className="text-white font-medium">29JPFPK4060F1ZQ</strong>
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-7 h-7 rounded-lg bg-white/[0.06] text-[#D8B43B] flex items-center justify-center shrink-0 border border-white/10">
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
@@ -487,9 +476,6 @@ export default function Footer() {
               <p className="text-slate-300">
                 <strong className="text-white block font-medium">Khushi Tours And Travels</strong>
                 Ground Floor No: 2, Kodigehalli Main Road, Near Railway Station, Vidyaranyapura, Virupakshapura, Bengaluru, 560097.
-              </p>
-              <p className="text-slate-400">
-                GST: <strong className="text-white font-medium">29JPFPK4060F1ZQ</strong>
               </p>
               <div className="flex flex-col gap-1.5 pt-1">
                 <a href="tel:+919901333113" className="text-white font-semibold text-sm hover:text-[#D8B43B]">

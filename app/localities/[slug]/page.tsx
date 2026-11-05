@@ -189,8 +189,8 @@ export default function LocalityDetailPage({ params }: LocalityPageProps) {
                 </li>
                 <li className="flex items-start">
                   <span>
-                    Transparent distance rates starting at ₹18/km with GST
-                    invoicing.
+                    Transparent distance rates starting at ₹18/km with no hidden
+                    surprises.
                   </span>
                 </li>
               </ul>

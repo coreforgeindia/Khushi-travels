@@ -146,7 +146,6 @@ export function buildLocalBusinessSchema() {
       closes: "23:59",
     },
     foundingDate: "2018-08-15",
-    taxID: "29JPFPK4060F1ZQ",
     numberOfEmployees: { "@type": "QuantitativeValue", value: "15" },
     hasOfferCatalog: {
       "@type": "OfferCatalog",

@@ -196,7 +196,7 @@ export default function PricingTable() {
           </li>
           <li className="flex items-start gap-2">
             Zero hidden
-            surcharges. GST tax invoice provided for all bookings.
+            surcharges. Clear upfront pricing with no surprise add-ons.
           </li>
         </ul>
       </div>

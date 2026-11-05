@@ -189,7 +189,6 @@ export const WEEKEND_PACKAGES: DetailedPackage[] = [
       "Toll charges and driver bata",
     ],
     exclusions: [
-      "GST @ 5%",
       "Honnavar backwater boat ride",
       "Travel, accidental and medical insurance",
       "Costs arising from uncontrollable circumstances (weather, landslides, public protests)",
@@ -2207,19 +2206,18 @@ export const SPECIAL_PACKAGES: DetailedPackage[] = [
       "All Hotel Taxes Included.",
     ],
     exclusions: [
-      "5% GST Extra on Total Billing.",
       "Entry Tickets at monuments.",
       "Guide Charges & personal pooja dakshina.",
       "Anything not specifically mentioned in the inclusions.",
     ],
-    priceStatus: "₹17,900 / Person (+ 5% GST)",
+    priceStatus: "₹17,900 / Person",
     suggestedVehicles: [
       "20 Seater Luxury Tempo Traveller",
       "Force Urbania 17 Seater",
       "Executive Luxury Bus",
     ],
     whatsappMessage:
-      "Hi Khushi Travels, I want to enquire about the Kashi, Triveni, Ayodhya Yatra package (3N/4D, 16 Adults, ₹17,900 per person + 5% GST).",
+      "Hi Khushi Travels, I want to enquire about the Kashi, Triveni, Ayodhya Yatra package (3N/4D, 16 Adults, ₹17,900 per person).",
   },
   {
     slug: "12-jyotirlinga-yatra",

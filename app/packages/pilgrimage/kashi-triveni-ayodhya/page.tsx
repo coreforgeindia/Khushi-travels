@@ -72,7 +72,7 @@ export default function KashiTriveniAyodhyaPage() {
         priceCurrency: "INR",
         unitText: "Person",
         description:
-          "B2B package costing per person for 16 adults in 08 double-sharing rooms. 5% GST extra on total billing.",
+          "B2B package costing per person for 16 adults in 08 double-sharing rooms with all pilgrimage essentials included.",
       },
       availability: "https://schema.org/InStock",
       validFrom: "2026-01-01",
@@ -122,7 +122,7 @@ export default function KashiTriveniAyodhyaPage() {
         name: "What is the group size and pricing structure?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "This B2B spiritual tour package is based on a group size of 16 adults accommodated across 08 double-sharing rooms at ₹17,900 per person. Government GST of 5% applies extra on total billing.",
+          text: "This B2B spiritual tour package is based on a group size of 16 adults accommodated across 08 double-sharing rooms at ₹17,900 per person, with all key inclusions arranged for a comfortable Yatra.",
         },
       },
       {
@@ -161,7 +161,7 @@ export default function KashiTriveniAyodhyaPage() {
   };
 
   const whatsappLink =
-    "https://wa.me/919901333113?text=Hi%20Khushi%20Travels%2C%20I%20want%20to%20enquire%20about%20the%20Kashi%20%E2%80%93%20Triveni%20%E2%80%93%20Ayodhya%20Yatra%20package%20(03%20Nights%20%2F%2004%20Days%2C%2016%20Adults%2C%20%E2%82%B917%2C900%20per%20person%20%2B%205%25%20GST).";
+    "https://wa.me/919901333113?text=Hi%20Khushi%20Travels%2C%20I%20want%20to%20enquire%20about%20the%20Kashi%20%E2%80%93%20Triveni%20%E2%80%93%20Ayodhya%20Yatra%20package%20(03%20Nights%20%2F%2004%20Days%2C%2016%20Adults%2C%20%E2%82%B917%2C900%20per%20person).";
 
   return (
     <>

@@ -20,7 +20,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     metaDescription: "Corporate tempo traveller and bus rentals in Bangalore. Employee daily shuttles, team offsites, client visits & airport transfers with GPS tracking.",
     eyebrow: "Enterprise Transport Partner",
     tagline: "Dedicated Employee Shuttles, Offsites & VIP Executive Transport",
-    highlightText: "Khushi Travels offers 9 to 50 seater vehicles for employee shuttles, factory transport, offsite events, and executive client visits. Monthly contracts available with dedicated account managers and GST billing.",
+    highlightText: "Khushi Travels offers 9 to 50 seater vehicles for employee shuttles, factory transport, offsite events, and executive client visits. Monthly contracts available with dedicated account managers and transparent pricing.",
     content: [
       "Smooth employee commutes drive productivity. We deliver safe, prompt, and verified staff transport across Bangalore's major tech parks and industrial hubs.",
       "Our corporate packages include real-time GPS tracking, daily sanitized cabins, experienced drivers, and monthly invoicing with detailed route reports.",
@@ -29,7 +29,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     features: [
       { title: "100% Owned Fleet", desc: "No third-party aggregators. Guaranteed quality, hygiene, and substitute vehicles on demand." },
       { title: "GPS Tracked & Safe", desc: "Real-time fleet tracking, speed governors, and female-passenger safety protocols." },
-      { title: "GST Invoices & Monthly Credit", desc: "Streamlined corporate accounts with transparent distance billing and dedicated relationship managers." },
+      { title: "Monthly Credit & Support", desc: "Streamlined corporate accounts with transparent distance billing and dedicated relationship managers." },
     ],
     ctaText: "Request Corporate Proposal",
     ctaQuery: "Hi Khushi Travels, I need corporate transport for our team.",
