@@ -64,7 +64,7 @@ Please share the official itemised quotation and availability.`;
           Book Your Sacred Yatra
         </h3>
         <p className="text-xs text-[#64748B] mt-0.5">
-          ₹17,900 / Person (+ 5% GST) &bull; 16 Adults &bull; All Meals &amp; Stays Included
+          ₹17,900 / Person  &bull; 16 Adults &bull; All Meals &amp; Stays Included
         </p>
       </div>
 

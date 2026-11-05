@@ -45,8 +45,8 @@ export const PILGRIMAGE_PACKAGES: PilgrimagePackage[] = [
       "3 Sacred Boat Rides Included",
       "20-Seater AC Luxury Tempo Traveller",
     ],
-    price: "₹17,900 / Person",
-    priceNote: "+ 5% GST",
+    price: "₹17,900",
+    // priceNote: "+ 5% GST",
     image: "/images/destinations/varanasi-ganga-aarti.jpg",
     imageAlt: "Kashi Triveni Ayodhya Yatra - Illuminated Dashashwamedh Ghat Evening Ganga Aarti Varanasi",
     href: "/packages/pilgrimage/kashi-triveni-ayodhya/",
@@ -535,8 +535,8 @@ export default function FeaturedPilgrimageCard() {
                     transition: isDragging
                       ? "none"
                       : prefersReducedMotion.current
-                      ? "none"
-                      : "transform 850ms cubic-bezier(0.22, 1, 0.36, 1), opacity 850ms cubic-bezier(0.22, 1, 0.36, 1), filter 850ms ease, box-shadow 850ms ease",
+                        ? "none"
+                        : "transform 850ms cubic-bezier(0.22, 1, 0.36, 1), opacity 850ms cubic-bezier(0.22, 1, 0.36, 1), filter 850ms ease, box-shadow 850ms ease",
                     willChange: "transform, opacity",
                   }}
                   className="absolute top-0 left-0 right-0 bottom-0 m-auto rounded-2xl sm:rounded-3xl overflow-hidden bg-[#1a365d] border border-[#f59e0b]/60 cursor-pointer w-[92vw] max-w-[390px] h-[480px] sm:h-[490px] md:max-w-[680px] md:w-[88%] lg:max-w-[720px] lg:w-[88%] xl:max-w-none xl:w-[740px] 2xl:w-[760px] md:h-[460px] lg:h-[470px] xl:h-[480px] 2xl:h-[490px]"
@@ -759,11 +759,10 @@ export default function FeaturedPilgrimageCard() {
                 goToSlide(dotIdx);
               }}
               aria-label={`Go to slide ${dotIdx + 1}: ${pkg.name}`}
-              className={`transition-all duration-300 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1a365d] ${
-                dotIdx === currentIndex
-                  ? "w-8 sm:w-9 h-2 bg-[#f59e0b] shadow-sm"
-                  : "w-2 h-2 bg-slate-300 hover:bg-slate-400"
-              }`}
+              className={`transition-all duration-300 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1a365d] ${dotIdx === currentIndex
+                ? "w-8 sm:w-9 h-2 bg-[#f59e0b] shadow-sm"
+                : "w-2 h-2 bg-slate-300 hover:bg-slate-400"
+                }`}
             />
           ))}
         </div>
