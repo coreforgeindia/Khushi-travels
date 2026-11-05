@@ -311,9 +311,9 @@ export default function KashiPackageDetailClient({
                         </span>
                       </div>
                     </div>
-                    <span className="text-xs font-semibold text-amber-900 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
+                    {/* <span className="text-xs font-semibold text-amber-900 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
                       5% GST extra
-                    </span>
+                    </span> */}
                   </div>
 
                   {/* Quick Feature Checklist */}
@@ -919,9 +919,8 @@ export default function KashiPackageDetailClient({
               <div
                 key={i}
                 onClick={() => setLightboxImage(img)}
-                className={`group cursor-pointer rounded-xl sm:rounded-2xl overflow-hidden bg-slate-900 border border-[#E2E8F0] shadow-sm relative aspect-[4/3] transition-all hover:shadow-lg hover:-translate-y-0.5 ${
-                  i >= 4 ? "hidden lg:block" : "block"
-                }`}
+                className={`group cursor-pointer rounded-xl sm:rounded-2xl overflow-hidden bg-slate-900 border border-[#E2E8F0] shadow-sm relative aspect-[4/3] transition-all hover:shadow-lg hover:-translate-y-0.5 ${i >= 4 ? "hidden lg:block" : "block"
+                  }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

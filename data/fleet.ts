@@ -4,6 +4,7 @@ export interface Vehicle {
   subtitle: string;
   seats: string;
   ratePerKm: number;
+  ratePerKmSuv?: number;
   driverAllowance: number;
   category: "tempo" | "urbania" | "bus" | "car";
   image: string;
@@ -202,6 +203,7 @@ export const FLEET_DATA: Vehicle[] = [
     subtitle: "Dzire, Etios, Innova & Premium Cabs",
     seats: "4 to 7 Passengers",
     ratePerKm: 14,
+    ratePerKmSuv: 18,
     driverAllowance: 500,
     category: "car",
     image: "/images/fleet/luxury-car-bangalore-1.webp",
