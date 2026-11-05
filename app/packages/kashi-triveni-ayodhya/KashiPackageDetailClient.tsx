@@ -919,9 +919,8 @@ export default function KashiPackageDetailClient({
               <div
                 key={i}
                 onClick={() => setLightboxImage(img)}
-                className={`group cursor-pointer rounded-xl sm:rounded-2xl overflow-hidden bg-slate-900 border border-[#E2E8F0] shadow-sm relative aspect-[4/3] transition-all hover:shadow-lg hover:-translate-y-0.5 ${
-                  i >= 4 ? "hidden lg:block" : "block"
-                }`}
+                className={`group cursor-pointer rounded-xl sm:rounded-2xl overflow-hidden bg-slate-900 border border-[#E2E8F0] shadow-sm relative aspect-[4/3] transition-all hover:shadow-lg hover:-translate-y-0.5 ${i >= 4 ? "hidden lg:block" : "block"
+                  }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

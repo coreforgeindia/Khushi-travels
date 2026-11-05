@@ -186,14 +186,52 @@ export default function VehicleDetailPage({ params }: FleetPageProps) {
                 <span className="text-xs font-bold text-brand-amber uppercase tracking-wider block mb-1">
                   Pricing &amp; Rates
                 </span>
-                <div className="flex items-baseline gap-3">
-                  <span className="text-4xl font-heading font-bold text-brand-navy">
-                    ₹{vehicle.ratePerKm}
-                  </span>
-                  <span className="text-gray-500 font-semibold text-lg">
-                    / km
-                  </span>
-                </div>
+                {vehicle.ratePerKmSuv !== undefined ? (
+                  <div className="grid grid-cols-2 gap-4 mt-3">
+
+                    {/* Sedan Pricing */}
+                    <div>
+                      <p className="text-sm font-bold text-gray-500 uppercase">
+                        Sedan
+                      </p>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-4xl font-heading font-bold text-brand-navy">
+                          ₹{vehicle.ratePerKm}
+                        </span>
+                        <span className="text-gray-500 text-sm">/ km</span>
+                      </div>
+                      <p className="text-xs text-gray-500 mt-1">
+                        Dzire & Etios
+                      </p>
+                    </div>
+
+                    {/* SUV Pricing */}
+                    <div>
+                      <p className="text-sm font-bold text-gray-500 uppercase">
+                        SUV
+                      </p>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-4xl font-heading font-bold text-brand-navy">
+                          ₹{vehicle.ratePerKmSuv}
+                        </span>
+                        <span className="text-gray-500 text-sm">/ km</span>
+                      </div>
+                      <p className="text-xs text-gray-500 mt-1">
+                        Innova & Crysta
+                      </p>
+                    </div>
+
+                  </div>
+                ) : (
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-4xl font-heading font-bold text-brand-navy">
+                      ₹{vehicle.ratePerKm}
+                    </span>
+                    <span className="text-gray-500 font-semibold text-lg">
+                      / km
+                    </span>
+                  </div>
+                )}
                 <p className="text-xs text-gray-500 mt-1">
                   Driver Allowance: ₹{vehicle.driverAllowance} / day &bull; Minimum
                   300 km/day for outstation
