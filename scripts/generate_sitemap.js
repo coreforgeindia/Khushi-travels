@@ -16,6 +16,7 @@ function extractSlugs(filePath) {
 
 const SITE_URL = 'https://khushitravel.in';
 const TODAY = new Date().toISOString().split('T')[0];
+const landingPageCsv = 'landing-pages-master.csv';
 
 const fleetPages = extractPageAssets('data/fleet.ts');
 const servicePages = extractSlugs('data/services.ts');
@@ -35,11 +36,44 @@ const normalPackages = extractPackagesByCategory('NORMAL_PACKAGES');
 const specialPackages = extractPackagesByCategory('SPECIAL_PACKAGES');
 const weekendPackages = extractPackagesByCategory('WEEKEND_PACKAGES');
 
+function extractLandingPageSlugs(filePath) {
+  if (!fs.existsSync(filePath)) return [];
+
+  const content = fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, '');
+  const lines = content.split(/\r?\n/).filter(Boolean);
+  if (lines.length < 2) return [];
+
+  const headers = lines[0].split(',');
+  const tierIndex = headers.indexOf('tier');
+  const slugIndex = headers.indexOf('slug');
+  if (tierIndex === -1 || slugIndex === -1) {
+    throw new Error(`The ${filePath} file must contain tier and slug columns.`);
+  }
+
+  const slugs = [];
+  for (const line of lines.slice(1)) {
+    const values = line.split(',');
+    const tier = values[tierIndex];
+    const slug = values[slugIndex];
+    const validSlug =
+      slug === 'best-travel-agency-karnataka' ||
+      /^best-travel-agency-[a-z0-9]+(?:-[a-z0-9]+)*-(?:karnataka|bengaluru)$/.test(slug);
+
+    if (!['1', '2', '3'].includes(tier) || !validSlug) continue;
+    slugs.push({ tier, slug });
+  }
+
+  return [...new Map(slugs.map((page) => [page.slug, page])).values()];
+}
+
+const landingPages = extractLandingPageSlugs(landingPageCsv);
+
 console.log('Extracted slugs:');
 console.log('Fleet:', fleetPages.length);
 console.log('Holiday Packages:', normalPackages.length);
 console.log('Pilgrimage Packages:', specialPackages.length);
 console.log('Weekend Packages:', weekendPackages.length);
+console.log('Location landing pages:', landingPages.length);
 
 const urls = [];
 
@@ -71,6 +105,12 @@ addUrl('packages', '0.85', 'weekly');
 addUrl('packages/holiday', '0.85', 'weekly');
 addUrl('packages/pilgrimage', '0.85', 'weekly');
 addUrl('packages/weekend', '0.85', 'weekly');
+
+// 1a. Programmatic location landing pages
+landingPages.forEach(({ tier, slug }) => {
+  const priority = tier === '1' ? '0.8' : tier === '2' ? '0.7' : '0.6';
+  addUrl(slug, priority, 'monthly');
+});
 
 // 2. Fleet Vehicle Pages
 fleetPages.forEach(({ slug, image }) => {
