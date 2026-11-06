@@ -491,6 +491,20 @@ export default function HomePage() {
 
       {/* ===== SERVICE COVERAGE ===== */}
       <ServiceCoverage />
+
+      <section className="border-t border-slate-100 bg-white py-8">
+        <div className="container-custom text-center">
+          <p className="text-sm text-slate-600">
+            Planning travel elsewhere in Karnataka?
+          </p>
+          <Link
+            href="/best-travel-agency-karnataka/"
+            className="mt-2 inline-flex font-heading font-bold text-brand-navy underline decoration-brand-amber underline-offset-4 hover:text-brand-amber"
+          >
+            Explore Karnataka travel locations
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

@@ -53,7 +53,7 @@ export default function Footer() {
     <footer
       className="relative pt-12 sm:pt-14 md:pt-16 pb-24 sm:pb-20 md:pb-12 border-t border-white/[0.12] overflow-hidden text-[#CBD5E1]"
       style={{
-        background: "linear-gradient(180deg, #080878 0%, #05055C 100%)",
+        background: "linear-gradient(180deg, #1a365d 0%, #142d4f 100%)",
       }}
     >
       <div className="container-custom relative z-10">
@@ -96,7 +96,7 @@ export default function Footer() {
                   href="https://www.instagram.com/khushi_travels_"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/[0.06] hover:bg-[#D8B43B] text-[#CBD5E1] hover:text-[#080878] flex items-center justify-center transition-all duration-200 border border-white/10 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
+                  className="w-9 h-9 rounded-full bg-white/[0.06] hover:bg-[#D8B43B] text-[#CBD5E1] hover:text-[#1a365d] flex items-center justify-center transition-all duration-200 border border-white/10 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
                   aria-label="Follow Khushi Travels on Instagram"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ export default function Footer() {
                   href="https://www.facebook.com/p/Khushi-tours-and-travels-61566515977365/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/[0.06] hover:bg-[#D8B43B] text-[#CBD5E1] hover:text-[#080878] flex items-center justify-center transition-all duration-200 border border-white/10 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
+                  className="w-9 h-9 rounded-full bg-white/[0.06] hover:bg-[#D8B43B] text-[#CBD5E1] hover:text-[#1a365d] flex items-center justify-center transition-all duration-200 border border-white/10 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
                   aria-label="Follow Khushi Travels on Facebook"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -118,7 +118,7 @@ export default function Footer() {
                   href="https://www.youtube.com/@sureshj1169"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/[0.06] hover:bg-[#D8B43B] text-[#CBD5E1] hover:text-[#080878] flex items-center justify-center transition-all duration-200 border border-white/10 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
+                  className="w-9 h-9 rounded-full bg-white/[0.06] hover:bg-[#D8B43B] text-[#CBD5E1] hover:text-[#1a365d] flex items-center justify-center transition-all duration-200 border border-white/10 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
                   aria-label="Subscribe to Khushi Travels on YouTube"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -271,7 +271,7 @@ export default function Footer() {
               </a>
               <a
                 href="tel:+919901333113"
-                className="h-9 px-2 rounded-lg bg-[#D8B43B] hover:bg-amber-500 text-[#080878] text-[11px] font-bold flex items-center justify-center gap-1.5 shadow-md hover:shadow-amber-500/20 transition-all duration-200"
+                className="h-9 px-2 rounded-lg bg-[#D8B43B] hover:bg-amber-500 text-[#1a365d] text-[11px] font-bold flex items-center justify-center gap-1.5 shadow-md hover:shadow-amber-500/20 transition-all duration-200"
                 aria-label="Call Khushi Travels"
               >
                 <svg className="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24">
@@ -357,7 +357,7 @@ export default function Footer() {
           </div>
 
           {/* Accordion 1: Explore */}
-          <div className="bg-[#05055C]/40 border border-white/[0.12] rounded-xl overflow-hidden">
+          <div className="bg-white/[0.05] border border-white/[0.12] rounded-xl overflow-hidden">
             <button
               type="button"
               onClick={() => setExploreOpen(!exploreOpen)}
@@ -415,7 +415,7 @@ export default function Footer() {
           </div>
 
           {/* Accordion 2: Customer Support */}
-          <div className="bg-[#05055C]/40 border border-white/[0.12] rounded-xl overflow-hidden">
+          <div className="bg-white/[0.05] border border-white/[0.12] rounded-xl overflow-hidden">
             <button
               type="button"
               onClick={() => setSupportOpen(!supportOpen)}
@@ -466,7 +466,7 @@ export default function Footer() {
           </div>
 
           {/* Mobile Contact Information Card */}
-          <div className="bg-[#05055C]/40 border border-white/[0.12] rounded-2xl p-5 space-y-4">
+          <div className="bg-white/[0.05] border border-white/[0.12] rounded-2xl p-5 space-y-4">
             <h4 className="text-white font-heading font-bold text-sm uppercase tracking-wider flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#D8B43B]" />
               Office &amp; Support
@@ -499,7 +499,7 @@ export default function Footer() {
               </a>
               <a
                 href="tel:+919901333113"
-                className="h-10 rounded-xl bg-[#D8B43B] text-[#080878] text-xs font-bold flex items-center justify-center gap-1 active:scale-95 shadow-sm"
+                className="h-10 rounded-xl bg-[#D8B43B] text-[#1a365d] text-xs font-bold flex items-center justify-center gap-1 active:scale-95 shadow-sm"
               >
                 <span>Call Now</span>
               </a>
@@ -564,7 +564,7 @@ export default function Footer() {
                 type="button"
                 onClick={scrollToTop}
                 aria-label="Back to top"
-                className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/[0.08] hover:bg-[#D8B43B] hover:text-[#080878] text-slate-300 transition-all duration-200 border border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
+                className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/[0.08] hover:bg-[#D8B43B] hover:text-[#1a365d] text-slate-300 transition-all duration-200 border border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D8B43B]"
                 title="Back to top"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
