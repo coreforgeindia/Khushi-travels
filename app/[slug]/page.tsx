@@ -4,6 +4,10 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQAccordion from "@/components/FAQAccordion";
 import {
+  getLocalLandingDetails,
+  getLocalRouteLinks,
+} from "@/data/landing-page-local-details";
+import {
   INVALID_LANDING_PAGE_SLUGS,
   LANDING_PAGES,
   getLandingPage,
@@ -86,32 +90,36 @@ function getNearbyPages(page: (typeof LANDING_PAGES)[number]) {
   return siblings.slice(start, start + 5);
 }
 
-function buildFaqs(locationName: string) {
+function buildFaqs(
+  locationName: string,
+  details: ReturnType<typeof getLocalLandingDetails>
+) {
+  const destinations = details.destinations.slice(0, 3).join(", ");
   return [
     {
       question: `Can I request a Tempo Traveller pickup in ${locationName}?`,
       answer:
-        `Contact Khushi Travels with your pickup point, travel dates, destination, and group size. The team will confirm whether pickup from ${locationName} can be arranged and which vehicles are available.`,
+        `Pickup requests are accepted for ${details.pickupArea}. Send the exact address or map pin, travel date, destination, and group size. Khushi Travels will confirm the meeting point, vehicle access, and availability before booking.`,
     },
     {
-      question: `What vehicles can I ask about for a trip from ${locationName}?`,
+      question: `Where should our group meet in ${locationName}?`,
       answer:
-        "Khushi Travels offers chauffeur-driven Tempo Travellers and luxury buses. Share your group size and luggage requirements to discuss a suitable option.",
+        `${details.pickupReference}. ${details.transportNote}`,
     },
     {
-      question: `How do I get a travel quote for ${locationName}?`,
+      question: `Which nearby trips can we plan from ${locationName}?`,
       answer:
-        "Call +91 99013 33113 or message on WhatsApp with your pickup point, destination, dates, group size, and preferred vehicle. The team will confirm availability and provide a trip-specific quote.",
+        `Popular trip ideas in this area include ${destinations}. Share your preferred stops and travel dates so the team can discuss a suitable itinerary and confirm vehicle availability.`,
     },
     {
-      question: `Can I book group travel for a pilgrimage or company trip?`,
+      question: `Which vehicle should we request for a ${locationName} trip?`,
       answer:
-        "Yes. Khushi Travels arranges chauffeur-driven group travel for family trips, pilgrimages, corporate tours, and other group journeys. Contact the team to discuss your itinerary.",
+        "Khushi Travels offers chauffeur-driven Tempo Travellers and luxury buses. Ask about available seating options and share your group size, luggage, and any narrow-road or parking constraints before choosing.",
     },
     {
-      question: `Where can I check Tempo Traveller rental pricing?`,
+      question: `How do I confirm a quote and pickup for ${locationName}?`,
       answer:
-        "Visit the pricing page or contact Khushi Travels for a quote based on your route and travel details. No fixed price is quoted on this location page.",
+        "Call +91 99013 33113 or message on WhatsApp with the exact pickup pin, destination, date, group size, and preferred vehicle. The team will confirm pickup details, availability, and a trip-specific quote.",
     },
   ];
 }
@@ -184,8 +192,10 @@ export default function LocationLandingPage({ params }: LandingPageProps) {
 
   const locationName = getLocationName(page);
   const pageLocation = page.tier === "3" ? `${locationName}, Bengaluru` : locationName;
+  const localDetails = getLocalLandingDetails(page, locationName);
+  const localRouteLinks = getLocalRouteLinks(localDetails);
   const breadcrumbs = getBreadcrumbs(page, pageLocation);
-  const faqs = buildFaqs(pageLocation);
+  const faqs = buildFaqs(pageLocation, localDetails);
   const childPages =
     page.slug === BANGALORE_SLUG
       ? LANDING_PAGES.filter((candidate) => candidate.tier === "3")
@@ -252,16 +262,66 @@ export default function LocationLandingPage({ params }: LandingPageProps) {
       <section className="section-py bg-white">
         <div className="container-custom max-w-4xl">
           <p className="text-base leading-8 text-slate-600">
-            Planning group travel from {pageLocation}? Khushi Travels is a
-            Bengaluru-based operator offering a 100% owned, GPS-monitored fleet
-            with chauffeur-driven vehicles for family outings, pilgrimage
-            journeys, corporate tours, and group travel. Share your pickup point,
-            destination, travel dates, and group size so the team can confirm
-            whether pickup from {locationName} can be arranged. Vehicle
-            availability and a trip-specific quote are confirmed before booking;
-            contact us for details rather than relying on a generic online
-            estimate.
+            Planning group travel from {pageLocation}? Khushi Travels operates a
+            100% owned, GPS-monitored fleet of chauffeur-driven vehicles for
+            family trips, pilgrimages, corporate tours, and group travel. Pickup
+            requests for {localDetails.pickupArea} can be discussed with the
+            booking team. Send the exact pickup pin, destination, travel date,
+            group size, and luggage needs so the team can confirm the meeting
+            point, vehicle access, availability, and a trip-specific quote.
           </p>
+        </div>
+      </section>
+
+      <section className="section-py bg-gray-50">
+        <div className="container-custom">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-amber">
+              Local pickup planning
+            </p>
+            <h2 className="font-heading text-h2 font-bold text-brand-navy">
+              Pickup requests in {localDetails.pickupArea}
+            </h2>
+            <p className="mt-4 leading-7 text-slate-600">
+              {localDetails.transportNote}
+            </p>
+          </div>
+          <div className="mx-auto mt-7 grid max-w-4xl gap-5 md:grid-cols-2">
+            <article className="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="font-heading text-lg font-bold text-brand-navy">
+                Suggested pickup reference
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                {localDetails.pickupReference}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Confirm the exact meeting point, vehicle access, and availability
+                with the booking team before travel.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="font-heading text-lg font-bold text-brand-navy">
+                Local places and trip stops
+              </h3>
+              {localDetails.landmarks.length > 0 ? (
+                <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                  {localDetails.landmarks.map((landmark) => (
+                    <li key={landmark} className="flex gap-2">
+                      <span className="font-bold text-brand-amber" aria-hidden="true">
+                        •
+                      </span>
+                      <span>{landmark}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  Use {localDetails.pickupArea} as the pickup-area reference and
+                  share a nearby landmark or exact map pin when you enquire.
+                </p>
+              )}
+            </article>
+          </div>
         </div>
       </section>
 
@@ -324,20 +384,19 @@ export default function LocationLandingPage({ params }: LandingPageProps) {
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              ["Mysore", "/routes/bangalore-to-mysore-tempo-traveller/"],
-              ["Coorg", "/routes/bangalore-to-coorg-tempo-traveller/"],
-              ["Ooty", "/routes/bangalore-to-ooty-tempo-traveller/"],
-              ["Tirupati", "/routes/bangalore-to-tirupati-tempo-traveller/"],
-              ["Chikmagalur", "/routes/bangalore-to-chikmagalur-tempo-traveller/"],
-              ["Pondicherry", "/routes/bangalore-to-pondicherry-tempo-traveller/"],
-            ].map(([destination, href]) => (
+            {localRouteLinks.map((route) => (
               <Link
-                key={destination}
-                href={href}
+                key={route.href}
+                href={route.href}
                 className="rounded-xl border border-slate-200 px-5 py-4 font-semibold text-brand-navy transition hover:border-amber-400 hover:bg-amber-50"
               >
-                Bengaluru to {destination} <span aria-hidden="true">→</span>
+                <span className="block">
+                  {page.tier === "3" ? "From Bengaluru to " : "Bengaluru to "}
+                  {route.destination}
+                </span>
+                <span className="mt-1 block text-xs font-normal leading-5 text-slate-500">
+                  {route.routeOverview}
+                </span>
               </Link>
             ))}
           </div>
