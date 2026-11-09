@@ -134,8 +134,10 @@ export const FLEET_DATA: Vehicle[] = [
     category: "bus",
     image: "/images/fleet/luxury-50-seater-bus-bangalore-1.webp",
     gallery: [
-      "/images/fleet/luxury-50-seater-bus-bangalore-1.webp",
-      "/images/fleet/luxury-40-seater-bus-bangalore-1.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-2.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-3.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-4.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-5.webp",
     ],
     features: [
       "Pushback seats with broad calf-support and recline",
