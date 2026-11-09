@@ -212,9 +212,8 @@ export const FLEET_DATA: Vehicle[] = [
     category: "car",
     image: "/images/fleet/luxury-car-bangalore-1.webp",
     gallery: [
-      "/images/fleet/luxury-car-bangalore-1.webp",
-      "/images/fleet/toyota-innova-crysta-bangalore-2.webp",
       "/images/fleet/toyota-innova-crysta-bangalore-1.webp",
+      "/images/fleet/toyota-innova-crysta-bangalore-2.webp",
     ],
     features: [
       "Immaculately valeted and sanitized sedans",
