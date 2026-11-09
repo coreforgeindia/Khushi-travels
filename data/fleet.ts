@@ -80,8 +80,10 @@ export const FLEET_DATA: Vehicle[] = [
     category: "tempo",
     image: "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-1.webp",
     gallery: [
-      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-1.webp",
-      "/images/fleet/luxury-minibus-rental-bangalore-1.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-2.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-3.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-4.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-5.webp",
     ],
     features: [
       "16 comfortable high-back pushback recliners",
