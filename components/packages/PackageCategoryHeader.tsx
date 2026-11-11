@@ -5,7 +5,7 @@ interface PackageCategoryHeaderProps {
   eyebrow: string;
   title: string;
   description: string;
-  activeCategory: "normal" | "special" | "weekend" | "all";
+  activeCategory: "normal" | "special" | "weekend" | "exclusive" | "all";
   count?: number;
 }
 
@@ -21,6 +21,7 @@ export default function PackageCategoryHeader({
     { label: "Holiday Packages", href: "/packages/holiday/", id: "normal" },
     { label: "Pilgrimage Packages", href: "/packages/pilgrimage/", id: "special" },
     { label: "Weekend Packages", href: "/packages/weekend/", id: "weekend" },
+    { label: "Special Packages", href: "/packages/special/", id: "exclusive" },
   ];
 
   return (

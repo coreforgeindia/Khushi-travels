@@ -14,11 +14,22 @@ export default function PackageCard({
   showSpecialOfferBadge = false,
 }: PackageCardProps) {
   const detailUrl =
-    pkg.slug === "kashi-triveni-ayodhya"
+    pkg.href
+      ? pkg.href
+      : pkg.slug === "kashi-triveni-ayodhya"
       ? "/packages/pilgrimage/kashi-triveni-ayodhya/"
       : pkg.slug === "12-jyotirlinga-yatra"
       ? "/packages/pilgrimage/12-jyotirlinga-yatra/"
-      : `/packages/${pkg.category === "normal" ? "holiday" : pkg.category === "special" ? "pilgrimage" : pkg.category}/${pkg.slug}/`;
+      : `/packages/${
+          pkg.category === "normal"
+            ? "holiday"
+            : pkg.category === "special"
+            ? "pilgrimage"
+            : pkg.category === "exclusive"
+            ? "special"
+            : pkg.category
+        }/${pkg.slug}/`;
+  const isFlyerPoster = pkg.image.includes("/images/packages/goa/");
   const whatsappText = encodeURIComponent(
     `Hello Khushi Travels, I want to enquire about the ${pkg.title} (${pkg.duration}). Please share vehicle availability and quotation.`
   );
@@ -30,18 +41,26 @@ export default function PackageCard({
         <SpecialOfferSticker className="badge-special-position" />
       )}
       {/* Image Container */}
-      <div className="relative aspect-[16/10] overflow-hidden rounded-t-2xl bg-slate-900">
+      <div
+        className={`relative overflow-hidden rounded-t-2xl ${
+          isFlyerPoster ? "aspect-square bg-[#071f3b]" : "aspect-[16/10] bg-slate-900"
+        }`}
+      >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           {...getResponsiveImageProps(pkg.image, "(max-width: 768px) 100vw, 33vw")}
           alt={`${pkg.title} - ${pkg.destination} tour package`}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className={`w-full h-full ${
+            isFlyerPoster ? "object-contain" : "object-cover group-hover:scale-105"
+          } transition-transform duration-500`}
           loading="lazy"
           decoding="async"
-          width={1200}
-          height={750}
+          width={isFlyerPoster ? 1024 : 1200}
+          height={isFlyerPoster ? 1024 : 750}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        {!isFlyerPoster && (
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        )}
 
       </div>
 

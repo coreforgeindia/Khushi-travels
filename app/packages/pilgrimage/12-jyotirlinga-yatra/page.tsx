@@ -10,12 +10,16 @@ import { getAssetPath, getResponsiveImageProps } from "@/lib/assets";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "12 Jyotirlinga Spiritual Yatra | Khushi Travels",
+  title: "12 Jyotirlinga Tour Package from Bangalore | Khushi Travels",
   description:
-    "Explore the proposed 25 day 12 Jyotirlinga yatra from Bangalore with temple visits, group transport and booking details from Khushi Travels.",
+    "Explore a 12 Jyotirlinga tour package from Bangalore. Request the proposed yatra itinerary, dates, inclusions and package price from Khushi Travels.",
   keywords: [
     "12 Jyotirlinga tour package from Bangalore",
     "12 Jyotirlinga yatra from Bengaluru",
+    "12 Jyotirlinga travel package",
+    "12 Jyotirlinga yatra package price",
+    "12 Jyotirlinga darshan tour package",
+    "12 Jyotirlinga tour package cost",
     "25 day Jyotirlinga pilgrimage",
     "Jyotirlinga pilgrimage package",
     "all India Shiva temple tour",
@@ -28,9 +32,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://khushitravel.in/packages/pilgrimage/12-jyotirlinga-yatra/",
-    title: "12 Jyotirlinga Spiritual Yatra | Khushi Travels",
+    title: "12 Jyotirlinga Tour Package from Bangalore | Khushi Travels",
     description:
-      "Proposed pilgrimage from Bengaluru covering all 12 Jyotirlingas. Contact Khushi Travels for confirmed itinerary and package details.",
+      "Explore the proposed 12 Jyotirlinga yatra from Bangalore. Ask Khushi Travels to confirm the itinerary, dates, inclusions and current package price.",
     images: [
       {
         url: "https://khushitravel.in/images/optimized/og/somnath.webp",
@@ -42,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "12 Jyotirlinga Spiritual Yatra | Khushi Travels",
+    title: "12 Jyotirlinga Tour Package from Bangalore | Khushi Travels",
     description:
-      "Proposed 25 day pilgrimage from Bengaluru covering all 12 Jyotirlingas. Request confirmed itinerary and details.",
+      "Explore the proposed 12 Jyotirlinga yatra from Bangalore. Request the itinerary, dates and current package details.",
     images: ["https://khushitravel.in/images/optimized/og/somnath.webp"],
   },
 };
@@ -54,7 +58,7 @@ export default function SpiritualPilgrimagePage() {
     { label: "Home", href: "/" },
     { label: "Tour Packages", href: "/packages/" },
     { label: "Pilgrimage Packages", href: "/packages/pilgrimage/" },
-    { label: "12 Jyotirlinga Spiritual Yatra", href: "/packages/pilgrimage/12-jyotirlinga-yatra/" },
+    { label: "12 Jyotirlinga Tour Package", href: "/packages/pilgrimage/12-jyotirlinga-yatra/" },
   ];
 
   const jyotirlingas = [
@@ -299,10 +303,18 @@ export default function SpiritualPilgrimagePage() {
       },
       {
         "@type": "Question",
-        name: "What is the confirmed price for this pilgrimage package?",
+        name: "What is the 12 Jyotirlinga yatra package price?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Please contact Khushi Tours & Travels directly for the confirmed package price. Package costs depend on coach category (e.g. AC Volvo multi-axle), double-sharing room preferences, and group size. We do not publish unverified package rates to ensure total pricing integrity.",
+          text: "Contact Khushi Travels for the current 12 Jyotirlinga tour package price. The final quote depends on confirmed travel dates, group size, transport, accommodation and inclusions. No fixed price is published on this page; ask for an itemized quotation before booking.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this an IRCTC 12 Jyotirlinga tour package?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. This is a proposed pilgrimage package from Khushi Travels and is not an IRCTC-operated or IRCTC-priced tour. Confirm the transport mode and any rail tickets directly with Khushi Travels before booking.",
         },
       },
       {
@@ -349,22 +361,23 @@ export default function SpiritualPilgrimagePage() {
 
             {/* Eyebrow */}
             <p className="text-[10px] sm:text-xs font-bold text-brand-amber uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-3 lg:mb-3">
-              Khushi Tours &amp; Travels &bull; Proposed Pilgrimage Package
+              Khushi Tours &amp; Travels &bull; 12 Jyotirlinga Yatra from Bangalore
             </p>
 
             {/* Main Heading */}
             <h1 className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-white tracking-tight mb-1.5 sm:mb-2.5 lg:mb-3 text-balance">
-              12 Jyotirlinga <span className="text-brand-amber">Spiritual Yatra</span>
+              12 Jyotirlinga Tour Package <span className="text-brand-amber">from Bangalore</span>
             </h1>
 
             {/* Subtitle */}
             <p className="font-heading text-xs sm:text-sm md:text-xl lg:text-xl text-amber-200/90 font-semibold mb-2 sm:mb-3 lg:mb-4 text-balance leading-snug">
-              Twelve Sacred Jyotirlingas. More Sacred Destinations. One Unforgettable Journey.
+              Proposed 12 Jyotirlinga Yatra • Itinerary and current package price on enquiry
             </p>
 
             {/* Supporting Description */}
             <p className="text-[11.5px] sm:text-sm md:text-base lg:text-base text-white/80 max-w-3xl mx-auto leading-relaxed mb-3 sm:mb-5 lg:mb-4 line-clamp-3 sm:line-clamp-none">
-              Join Khushi Tours &amp; Travels on a proposed 25-day pilgrimage starting and ending in Bengaluru, visiting
+              Looking for a 12 Jyotirlinga tour package from Bangalore? Review Khushi Tours &amp; Travels&apos; proposed
+              25-day pilgrimage starting and ending in Bengaluru, visiting
               India&apos;s twelve revered Jyotirlingas and exploring additional spiritual destinations including Mathura,
               Vrindavan, Ayodhya, Gaya, Bodh Gaya and Puri, subject to route confirmation and operational review.
             </p>
@@ -482,6 +495,7 @@ export default function SpiritualPilgrimagePage() {
             {jyotirlingas.map((j) => (
               <div
                 key={j.name}
+                id={j.name === "Mahakaleshwar Jyotirlinga" ? "mahakaleshwar-jyotirlinga" : undefined}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 hover:border-brand-amber hover:shadow-lg transition-all flex flex-col h-full group"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
@@ -1102,13 +1116,25 @@ export default function SpiritualPilgrimagePage() {
 
             <details className="faq-item bg-white rounded-xl p-5 border border-gray-200 shadow-sm transition-all">
               <summary className="cursor-pointer font-bold text-base text-brand-navy flex items-center justify-between select-none">
-                <span>What is the confirmed price for this pilgrimage package?</span>
+                <span>What is the 12 Jyotirlinga yatra package price?</span>
                 <span className="text-brand-amber text-lg font-bold ml-2">&darr;</span>
               </summary>
               <p className="mt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
-                Please <strong>contact Khushi Tours &amp; Travels directly for the confirmed package price</strong>.
-                Package costs depend on coach category (e.g. AC Volvo multi-axle), double-sharing room preferences, and
-                group size. We do not publish unverified package rates to ensure total pricing integrity.
+                Contact Khushi Travels for the current <strong>12 Jyotirlinga tour package price</strong>. The final
+                quote depends on confirmed travel dates, group size, transport, accommodation, and inclusions. No fixed
+                price is published on this page; ask for an itemized quotation before booking.
+              </p>
+            </details>
+
+            <details className="faq-item bg-white rounded-xl p-5 border border-gray-200 shadow-sm transition-all">
+              <summary className="cursor-pointer font-bold text-base text-brand-navy flex items-center justify-between select-none">
+                <span>Is this an IRCTC 12 Jyotirlinga tour package?</span>
+                <span className="text-brand-amber text-lg font-bold ml-2">&darr;</span>
+              </summary>
+              <p className="mt-3 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                No. This is a proposed pilgrimage package from Khushi Travels and is not an IRCTC-operated or
+                IRCTC-priced tour. Confirm the transport mode and any rail tickets directly with Khushi Travels
+                before booking.
               </p>
             </details>
 

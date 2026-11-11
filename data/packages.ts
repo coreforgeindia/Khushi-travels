@@ -11,7 +11,8 @@ export interface ItineraryDay {
 export interface DetailedPackage {
   slug: string;
   title: string;
-  category: "normal" | "special" | "weekend";
+  category: "normal" | "special" | "weekend" | "exclusive";
+  href?: string;
   destination: string;
   duration: string;
   badge?: string;
@@ -2537,23 +2538,82 @@ export const SPECIAL_PACKAGES: DetailedPackage[] = [
 ];
 
 // ============================================================================
+// 4. SPECIAL PACKAGES (FIXED DEPARTURES & FEATURED SEASONAL DEALS)
+// ============================================================================
+export const SPECIAL_DEPARTURE_PACKAGES: DetailedPackage[] = [
+  {
+    slug: "goa-holiday-package",
+    title: "Goa Holiday Package (25 Dec 2026)",
+    category: "exclusive",
+    href: "/packages/special/goa-holiday-package/",
+    destination: "Goa",
+    duration: "2 Nights / 3 Days",
+    badge: "25 Dec 2026 Departure",
+    image: "/images/packages/goa/goa-holiday-package.webp",
+    description:
+      "Special fixed-departure Goa Holiday Package departing 25 Dec 2026 for 2 Nights / 3 Days at ₹13,999/- per person. Includes A/C 3-Star hotel stay (3 sharing), 2 breakfasts, 2 lunches, 2 dinners, 5 water sports activities, DJ & disco cruise dinner, and iconic Goa sightseeing.",
+    highlights: [
+      "A/C 3-Star Hotel Stay (3 Sharing) near beaches & attractions",
+      "Meals included: 2 Breakfasts, 2 Lunches & 2 Dinners",
+      "5 Water Sports: Banana Ride, Jet Ski, Bumper Ski, Bumper Ride & Speed Boat",
+      "Cruise Dinner (DJ & Disco Floor, Unlimited Veg/Non-Veg + 1 Beer or Soft Drink)",
+      "Goa Sightseeing: Chapora Fort, Fontainhas Lane, Historic Churches, Parra Road & Beaches",
+    ],
+    itinerary: [
+      {
+        day: "Day 1 - Day 3",
+        title: "25 Dec 2026 Fixed Departure • 2 Nights / 3 Days Goa Experience",
+        route: "Check-in → Goa Sightseeing → 5 Water Sports → Cruise Dinner → Beaches",
+        schedule: [
+          "Check in to A/C 3-Star Hotel (3 sharing) near prime Goa beaches and attractions.",
+          "Meals included across the stay: 2 Breakfasts, 2 Lunches, and 2 Dinners.",
+          "Enjoy 5 Water Sports Activities: Banana Ride, Jet Ski, Bumper Ski, Bumper Ride, and Speed Boat.",
+          "Evening Goa Cruise Dinner with DJ & Disco Floor, Unlimited Veg & Non-Veg Dinner, and 1 Beer or 1 Soft Drink per person.",
+          "Sightseeing covering Chapora Fort, Fontainhas Lane, Historic Churches, Parra Road, and Goa beaches (Baga, Anjuna, Palolem & more).",
+        ],
+        stay: "A/C 3-Star Hotel Stay (3 Sharing)",
+        meals: "2 Breakfasts, 2 Lunches & 2 Dinners",
+        notes: "Full day-wise timing & departure point details are confirmed upon booking enquiry.",
+      },
+    ],
+    inclusions: [
+      "A/C 3-Star Hotel Stay (3 Sharing) in prime location",
+      "2 Breakfasts, 2 Lunches, and 2 Dinners",
+      "5 Water Sports Activities (Banana Ride, Jet Ski, Bumper Ski, Bumper Ride, Speed Boat)",
+      "Cruise Dinner (DJ & Disco Floor, Unlimited Veg & Non-Veg Dinner + 1 Beer or Soft Drink per person)",
+      "Goa Sightseeing (Chapora Fort, Fontainhas Lane, Historic Churches, Parra Road, Beaches)",
+    ],
+    priceStatus: "₹13,999/- Per Person",
+    suggestedVehicles: ["Group Fixed Departure", "AC Tempo Traveller", "Luxury Coach"],
+    whatsappMessage:
+      "Hi Khushi Travels, I want to enquire about the Special Goa Holiday Package (25 Dec 2026, 2 Nights / 3 Days, ₹13,999/- per person). Please share full itinerary and booking details.",
+  },
+];
+
+// ============================================================================
 // HELPER FUNCTIONS
 // ============================================================================
 export function getAllPackages(): DetailedPackage[] {
-  return [...WEEKEND_PACKAGES, ...NORMAL_PACKAGES, ...SPECIAL_PACKAGES];
+  return [
+    ...WEEKEND_PACKAGES,
+    ...NORMAL_PACKAGES,
+    ...SPECIAL_PACKAGES,
+    ...SPECIAL_DEPARTURE_PACKAGES,
+  ];
 }
 
 export function getPackagesByCategory(
-  category: "normal" | "special" | "weekend"
+  category: "normal" | "special" | "weekend" | "exclusive"
 ): DetailedPackage[] {
   if (category === "weekend") return WEEKEND_PACKAGES;
   if (category === "normal") return NORMAL_PACKAGES;
   if (category === "special") return SPECIAL_PACKAGES;
+  if (category === "exclusive") return SPECIAL_DEPARTURE_PACKAGES;
   return [];
 }
 
 export function getPackageBySlug(
-  category: "normal" | "special" | "weekend",
+  category: "normal" | "special" | "weekend" | "exclusive",
   slug: string
 ): DetailedPackage | undefined {
   const list = getPackagesByCategory(category);

@@ -43,6 +43,12 @@ export const MAIN_NAV_ITEMS: NavItem[] = [
         href: "/packages/weekend/",
         description: "Short getaways from Bangalore",
       },
+      {
+        name: "Special Packages",
+        href: "/packages/special/",
+        description: "Fixed-departure Goa & seasonal group specials",
+        badge: "New",
+      },
     ],
   },
   {

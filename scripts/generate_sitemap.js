@@ -35,6 +35,7 @@ function extractPackagesByCategory(categoryName) {
 const normalPackages = extractPackagesByCategory('NORMAL_PACKAGES');
 const specialPackages = extractPackagesByCategory('SPECIAL_PACKAGES');
 const weekendPackages = extractPackagesByCategory('WEEKEND_PACKAGES');
+const specialDeparturePackages = extractPackagesByCategory('SPECIAL_DEPARTURE_PACKAGES');
 
 function extractLandingPageSlugs(filePath) {
   if (!fs.existsSync(filePath)) return [];
@@ -73,6 +74,7 @@ console.log('Fleet:', fleetPages.length);
 console.log('Holiday Packages:', normalPackages.length);
 console.log('Pilgrimage Packages:', specialPackages.length);
 console.log('Weekend Packages:', weekendPackages.length);
+console.log('Special Packages:', specialDeparturePackages.length);
 console.log('Location landing pages:', landingPages.length);
 
 const urls = [];
@@ -105,6 +107,7 @@ addUrl('packages', '0.85', 'weekly');
 addUrl('packages/holiday', '0.85', 'weekly');
 addUrl('packages/pilgrimage', '0.85', 'weekly');
 addUrl('packages/weekend', '0.85', 'weekly');
+addUrl('packages/special', '0.85', 'weekly');
 
 // 1a. Programmatic location landing pages
 landingPages.forEach(({ tier, slug }) => {
@@ -136,6 +139,9 @@ specialPackages.forEach(({ slug, image }) => {
 });
 weekendPackages.forEach(({ slug, image }) => {
   addUrl(`packages/weekend/${slug}`, '0.75', 'weekly', [absoluteImageUrl(image)]);
+});
+specialDeparturePackages.forEach(({ slug, image }) => {
+  addUrl(`packages/special/${slug}`, '0.85', 'weekly', [absoluteImageUrl(image)]);
 });
 
 console.log('Total URLs compiled for sitemap:', urls.length);

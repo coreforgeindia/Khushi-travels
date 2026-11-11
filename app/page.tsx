@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import HomeOfferMarquee from "@/components/HomeOfferMarquee";
+import HomeFeaturedPackages from "@/components/HomeFeaturedPackages";
 
 export const metadata: Metadata = {
   title: "Luxury Tempo Traveller Bangalore | Khushi Travels",
@@ -255,6 +256,9 @@ export default function HomePage() {
         </div>
         <HomeOfferMarquee />
       </section>
+
+      {/* ===== FEATURED SPECIAL & PILGRIMAGE PACKAGES (2 CARDS RIGHT BELOW HERO) ===== */}
+      <HomeFeaturedPackages />
 
       {/* ===== QUICK STATS COUNTERS ===== */}
       <section className="bg-white relative z-20 py-8 sm:py-10 md:py-12 border-b border-gray-100">

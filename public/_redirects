@@ -1,16 +1,146 @@
-/spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage/ /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
-/spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
-/spiritual-pilgrimage-tours/ /packages/pilgrimage/ 301!
-/spiritual-pilgrimage-tours /packages/pilgrimage/ 301!
-/pilgrimage-packages/ /packages/pilgrimage/ 301!
-/pilgrimage-packages /packages/pilgrimage/ 301!
-/packages/normal/ /packages/holiday/ 301!
-/packages/normal /packages/holiday/ 301!
-/packages/normal/:splat /packages/holiday/:splat 301!
-/packages/special/12-jyotirlinga-pilgrimage/ /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
-/packages/special/12-jyotirlinga-pilgrimage /packages/pilgrimage/12-jyotirlinga-yatra/ 301!
-/packages/special/:splat /packages/pilgrimage/:splat 301!
-/packages/special/ /packages/pilgrimage/ 301!
-/packages/special /packages/pilgrimage/ 301!
-/packages/kashi-triveni-ayodhya/ /packages/pilgrimage/kashi-triveni-ayodhya/ 301!
-/packages/kashi-triveni-ayodhya /packages/pilgrimage/kashi-triveni-ayodhya/ 301!
+# Cloudflare Pages permanent 301 redirects
+# Static rules (must precede dynamic splat rules; max 2,000 static / 100 dynamic)
+
+# Existing legacy package & pilgrimage routes
+/spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage/ /packages/pilgrimage/12-jyotirlinga-yatra/ 301
+/spiritual-pilgrimage-tours/12-jyotirlinga-pilgrimage /packages/pilgrimage/12-jyotirlinga-yatra/ 301
+/spiritual-pilgrimage-tours/ /packages/pilgrimage/ 301
+/spiritual-pilgrimage-tours /packages/pilgrimage/ 301
+/pilgrimage-packages/ /packages/pilgrimage/ 301
+/pilgrimage-packages /packages/pilgrimage/ 301
+/packages/normal/ /packages/holiday/ 301
+/packages/normal /packages/holiday/ 301
+/packages/special/12-jyotirlinga-pilgrimage/ /packages/pilgrimage/12-jyotirlinga-yatra/ 301
+/packages/special/12-jyotirlinga-pilgrimage /packages/pilgrimage/12-jyotirlinga-yatra/ 301
+/packages/special/south-india-temple-circuit/ /packages/pilgrimage/south-india-temple-circuit/ 301
+/packages/special/south-india-temple-circuit /packages/pilgrimage/south-india-temple-circuit/ 301
+/packages/special/karnataka-heritage-pilgrimage/ /packages/pilgrimage/karnataka-heritage-pilgrimage/ 301
+/packages/special/karnataka-heritage-pilgrimage /packages/pilgrimage/karnataka-heritage-pilgrimage/ 301
+/packages/special/shirdi-nashik-trimbakeshwar/ /packages/pilgrimage/shirdi-nashik-trimbakeshwar/ 301
+/packages/special/shirdi-nashik-trimbakeshwar /packages/pilgrimage/shirdi-nashik-trimbakeshwar/ 301
+/packages/special/kashi-triveni-ayodhya/ /packages/pilgrimage/kashi-triveni-ayodhya/ 301
+/packages/special/kashi-triveni-ayodhya /packages/pilgrimage/kashi-triveni-ayodhya/ 301
+/packages/kashi-triveni-ayodhya/ /packages/pilgrimage/kashi-triveni-ayodhya/ 301
+/packages/kashi-triveni-ayodhya /packages/pilgrimage/kashi-triveni-ayodhya/ 301
+
+# Core, service, and legal .html pages
+/best-tempo-traveller-fleet-bangalore.html /best-tempo-traveller-fleet-bangalore/ 301
+/tempo-traveller-rent-price-bangalore.html /tempo-traveller-rent-price-bangalore/ 301
+/hire-tempo-traveller-bangalore.html /hire-tempo-traveller-bangalore/ 301
+/tour-packages-from-bangalore.html /tour-packages-from-bangalore/ 301
+/terms.html /terms/ 301
+/privacy.html /privacy/ 301
+/services/hire-tempo-traveller-bangalore.html /hire-tempo-traveller-bangalore/ 301
+/services/tempo-traveller-rent-price-bangalore.html /tempo-traveller-rent-price-bangalore/ 301
+/legal/terms.html /terms/ 301
+/legal/privacy.html /privacy/ 301
+/best-tempo-traveller-rental-bangalore.html /services/best-tempo-traveller-rental-bangalore/ 301
+/luxury-tempo-traveller-blog.html /services/luxury-tempo-traveller-blog/ 301
+/contact.html /hire-tempo-traveller-bangalore/ 301
+/about.html /services/best-tempo-traveller-rental-bangalore/ 301
+/tour-packages.html /packages/ 301
+/domestic-packages.html /packages/holiday/ 301
+/international-packages.html /packages/ 301
+/packages.html /packages/ 301
+/packages/holiday.html /packages/holiday/ 301
+/packages/pilgrimage.html /packages/pilgrimage/ 301
+/packages/weekend.html /packages/weekend/ 301
+
+# Legacy WordPress endpoints & service pages
+/download/ / 301
+/download / 301
+/tf_header_footer/ / 301
+/tf_header_footer / 301
+/service-khushi-tours-and-travels/ /services/best-tempo-traveller-rental-bangalore/ 301
+/service-khushi-tours-and-travels /services/best-tempo-traveller-rental-bangalore/ 301
+
+# Services .html counterparts
+/services/corporate-tempo-traveller-rental-bangalore.html /services/corporate-tempo-traveller-rental-bangalore/ 301
+/services/best-tempo-traveller-rental-bangalore.html /services/best-tempo-traveller-rental-bangalore/ 301
+/services/airport-transfer-tempo-traveller-bangalore.html /services/airport-transfer-tempo-traveller-bangalore/ 301
+/services/wedding-guest-transport-tempo-traveller-bangalore.html /services/wedding-guest-transport-tempo-traveller-bangalore/ 301
+/services/luxury-tempo-traveller-blog.html /services/luxury-tempo-traveller-blog/ 301
+
+# Fleet .html & legacy fleet URLs
+/fleet/9-seater-tempo-traveller-bangalore.html /fleet/9-seater-tempo-traveller-bangalore/ 301
+/fleet/12-14-seater-tempo-traveller-bangalore.html /fleet/12-14-seater-tempo-traveller-bangalore/ 301
+/fleet/16-seater-tempo-traveller-bangalore.html /fleet/16-seater-tempo-traveller-bangalore/ 301
+/fleet/force-urbania-rental-bangalore.html /fleet/force-urbania-rental-bangalore/ 301
+/fleet/bus-rental-bangalore.html /fleet/bus-rental-bangalore/ 301
+/fleet/mini-bus-rental-bangalore.html /fleet/mini-bus-rental-bangalore/ 301
+/fleet/toyota-innova-crysta-rental-bangalore.html /fleet/toyota-innova-crysta-rental-bangalore/ 301
+/fleet/luxury-car-rental-bangalore.html /fleet/luxury-car-rental-bangalore/ 301
+/fleet/tempo-traveller-rent-bangalore-outstation.html /fleet/tempo-traveller-rent-bangalore-outstation/ 301
+/tempo-traveller-rent-bangalore-outstation.html /fleet/tempo-traveller-rent-bangalore-outstation/ 301
+/12-14-seater-tempo-traveller-bangalore.html /fleet/12-14-seater-tempo-traveller-bangalore/ 301
+/9-seater-ultra-luxury-tempo-traveller/ /fleet/9-seater-tempo-traveller-bangalore/ 301
+/9-seater-ultra-luxury-tempo-traveller /fleet/9-seater-tempo-traveller-bangalore/ 301
+/urbania-rent-in-bangalore/ /fleet/force-urbania-rental-bangalore/ 301
+/urbania-rent-in-bangalore /fleet/force-urbania-rental-bangalore/ 301
+
+# Localities .html & legacy locality URLs
+/localities/tempo-traveller-in-mg-road-bangalore.html /localities/tempo-traveller-in-mg-road-bangalore/ 301
+/localities/tempo-traveller-in-marathahalli-bangalore.html /localities/tempo-traveller-in-marathahalli-bangalore/ 301
+/localities/tempo-traveller-in-banashankari-bangalore.html /localities/tempo-traveller-in-banashankari-bangalore/ 301
+/localities/tempo-traveller-in-jp-nagar-bangalore.html /localities/tempo-traveller-in-jp-nagar-bangalore/ 301
+/localities/tempo-traveller-in-rajajinagar-bangalore.html /localities/tempo-traveller-in-rajajinagar-bangalore/ 301
+/localities/tempo-traveller-in-jayanagar-bangalore.html /localities/tempo-traveller-in-jayanagar-bangalore/ 301
+/localities/tempo-traveller-in-whitefield-bangalore.html /localities/tempo-traveller-in-whitefield-bangalore/ 301
+/localities/tempo-traveller-in-koramangala-bangalore.html /localities/tempo-traveller-in-koramangala-bangalore/ 301
+/localities/tempo-traveller-in-indiranagar-bangalore.html /localities/tempo-traveller-in-indiranagar-bangalore/ 301
+/localities/tempo-traveller-in-hsr-layout-bangalore.html /localities/tempo-traveller-in-hsr-layout-bangalore/ 301
+/localities/tempo-traveller-in-hebbal-bangalore.html /localities/tempo-traveller-in-hebbal-bangalore/ 301
+/localities/tempo-traveller-in-btm-layout-bangalore.html /localities/tempo-traveller-in-btm-layout-bangalore/ 301
+/localities/tempo-traveller-in-electronic-city-bangalore.html /localities/tempo-traveller-in-electronic-city-bangalore/ 301
+/localities/tempo-traveller-in-yelahanka-bangalore.html /localities/tempo-traveller-in-yelahanka-bangalore/ 301
+/localities/tempo-traveller-in-yeshwanthpur-bangalore.html /localities/tempo-traveller-in-yeshwanthpur-bangalore/ 301
+/service-coverage/tempo-traveller-in-yeshwanthpur-bangalore.html /localities/tempo-traveller-in-yeshwanthpur-bangalore/ 301
+/tempo-traveller-in-marathahalli-bangalore.html /localities/tempo-traveller-in-marathahalli-bangalore/ 301
+/tempo-traveller-in-bellandur-comfortable-relable/ /localities/tempo-traveller-in-marathahalli-bangalore/ 301
+/tempo-traveller-in-bellandur-comfortable-relable /localities/tempo-traveller-in-marathahalli-bangalore/ 301
+/tempo-traveller-in-basveshwaranagar-comfortable/ /localities/tempo-traveller-in-rajajinagar-bangalore/ 301
+/tempo-traveller-in-basveshwaranagar-comfortable /localities/tempo-traveller-in-rajajinagar-bangalore/ 301
+/tempo-traveller-in-eletronic-city-comfortable/ /localities/tempo-traveller-in-electronic-city-bangalore/ 301
+/tempo-traveller-in-eletronic-city-comfortable /localities/tempo-traveller-in-electronic-city-bangalore/ 301
+
+# Old /fleet/routes/*.html -> /routes/*/
+/fleet/routes/bangalore-to-mysore-tempo-traveller.html /routes/bangalore-to-mysore-tempo-traveller/ 301
+/fleet/routes/bangalore-to-coorg-tempo-traveller.html /routes/bangalore-to-coorg-tempo-traveller/ 301
+/fleet/routes/bangalore-to-ooty-tempo-traveller.html /routes/bangalore-to-ooty-tempo-traveller/ 301
+/fleet/routes/bangalore-to-wayanad-tempo-traveller.html /routes/bangalore-to-wayanad-tempo-traveller/ 301
+/fleet/routes/bangalore-to-tirupati-tempo-traveller.html /routes/bangalore-to-tirupati-tempo-traveller/ 301
+/fleet/routes/bangalore-to-chikmagalur-tempo-traveller.html /routes/bangalore-to-chikmagalur-tempo-traveller/ 301
+/fleet/routes/bangalore-to-pondicherry-tempo-traveller.html /routes/bangalore-to-pondicherry-tempo-traveller/ 301
+/fleet/routes/bangalore-to-goa-tempo-traveller.html /routes/bangalore-to-goa-tempo-traveller/ 301
+/fleet/routes/bangalore-to-hampi-tempo-traveller.html /routes/bangalore-to-hampi-tempo-traveller/ 301
+/fleet/routes/bangalore-to-kodaikanal-tempo-traveller.html /routes/bangalore-to-kodaikanal-tempo-traveller/ 301
+/fleet/routes/bangalore-to-chennai-tempo-traveller.html /routes/bangalore-to-chennai-tempo-traveller/ 301
+/fleet/routes/bangalore-to-hyderabad-tempo-traveller.html /routes/bangalore-to-hyderabad-tempo-traveller/ 301
+/fleet/routes/bangalore-to-mangalore-tempo-traveller.html /routes/bangalore-to-mangalore-tempo-traveller/ 301
+/fleet/routes/bangalore-to-shirdi-tempo-traveller.html /routes/bangalore-to-shirdi-tempo-traveller/ 301
+
+# Old /services/routes/*.html -> /routes/*/
+/services/routes/bangalore-to-chennai-tempo-traveller.html /routes/bangalore-to-chennai-tempo-traveller/ 301
+/services/routes/bangalore-to-tirupati-tempo-traveller.html /routes/bangalore-to-tirupati-tempo-traveller/ 301
+/services/routes/bangalore-to-hyderabad-tempo-traveller.html /routes/bangalore-to-hyderabad-tempo-traveller/ 301
+/services/routes/bangalore-to-shirdi-tempo-traveller.html /routes/bangalore-to-shirdi-tempo-traveller/ 301
+
+# Old /routes/*.html (including Pondicherry typo variant) -> /routes/*/
+/routes/bangalore-to-pondicherry-tempo-troveller.html /routes/bangalore-to-pondicherry-tempo-traveller/ 301
+/routes/bangalore-to-pondicherry-tempo-traveller.html /routes/bangalore-to-pondicherry-tempo-traveller/ 301
+/routes/bangalore-to-mysore-tempo-traveller.html /routes/bangalore-to-mysore-tempo-traveller/ 301
+/routes/bangalore-to-coorg-tempo-traveller.html /routes/bangalore-to-coorg-tempo-traveller/ 301
+/routes/bangalore-to-ooty-tempo-traveller.html /routes/bangalore-to-ooty-tempo-traveller/ 301
+/routes/bangalore-to-wayanad-tempo-traveller.html /routes/bangalore-to-wayanad-tempo-traveller/ 301
+/routes/bangalore-to-tirupati-tempo-traveller.html /routes/bangalore-to-tirupati-tempo-traveller/ 301
+/routes/bangalore-to-chikmagalur-tempo-traveller.html /routes/bangalore-to-chikmagalur-tempo-traveller/ 301
+/routes/bangalore-to-goa-tempo-traveller.html /routes/bangalore-to-goa-tempo-traveller/ 301
+/routes/bangalore-to-hampi-tempo-traveller.html /routes/bangalore-to-hampi-tempo-traveller/ 301
+/routes/bangalore-to-kodaikanal-tempo-traveller.html /routes/bangalore-to-kodaikanal-tempo-traveller/ 301
+/routes/bangalore-to-chennai-tempo-traveller.html /routes/bangalore-to-chennai-tempo-traveller/ 301
+/routes/bangalore-to-hyderabad-tempo-traveller.html /routes/bangalore-to-hyderabad-tempo-traveller/ 301
+/routes/bangalore-to-mangalore-tempo-traveller.html /routes/bangalore-to-mangalore-tempo-traveller/ 301
+/routes/bangalore-to-shirdi-tempo-traveller.html /routes/bangalore-to-shirdi-tempo-traveller/ 301
+
+# Dynamic splat rules (must remain after all static rules)
+/packages/normal/* /packages/holiday/:splat 301
