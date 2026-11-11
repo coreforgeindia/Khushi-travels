@@ -80,8 +80,10 @@ export const FLEET_DATA: Vehicle[] = [
     category: "tempo",
     image: "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-1.webp",
     gallery: [
-      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-1.webp",
-      "/images/fleet/luxury-minibus-rental-bangalore-1.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-2.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-3.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-4.webp",
+      "/images/fleet/luxury-16-seater-tempo-traveller-bangalore-5.webp",
     ],
     features: [
       "16 comfortable high-back pushback recliners",
@@ -132,8 +134,10 @@ export const FLEET_DATA: Vehicle[] = [
     category: "bus",
     image: "/images/fleet/luxury-50-seater-bus-bangalore-1.webp",
     gallery: [
-      "/images/fleet/luxury-50-seater-bus-bangalore-1.webp",
-      "/images/fleet/luxury-40-seater-bus-bangalore-1.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-2.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-3.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-4.webp",
+      "/images/fleet/luxury-50-seater-bus-bangalore-5.webp",
     ],
     features: [
       "Pushback seats with broad calf-support and recline",
@@ -208,9 +212,8 @@ export const FLEET_DATA: Vehicle[] = [
     category: "car",
     image: "/images/fleet/luxury-car-bangalore-1.webp",
     gallery: [
-      "/images/fleet/luxury-car-bangalore-1.webp",
-      "/images/fleet/toyota-innova-crysta-bangalore-2.webp",
       "/images/fleet/toyota-innova-crysta-bangalore-1.webp",
+      "/images/fleet/toyota-innova-crysta-bangalore-2.webp",
     ],
     features: [
       "Immaculately valeted and sanitized sedans",
